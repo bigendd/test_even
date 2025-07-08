@@ -1,0 +1,53 @@
+package org.example.classes;
+
+public class Billet {
+    private String numero;
+    private String client;
+    private Evenement evenement;
+    private TypeBillet type; // champ manquant ajouté ici
+
+    public enum TypeBillet {
+        STANDARD,
+        GOLD,
+        VIP
+    }
+
+    public Billet(String numero, String client, Evenement evenement, TypeBillet type) {
+        this.numero = numero;
+        this.client = client;
+        this.evenement = evenement;
+        this.type = type; // correction ici
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public String getClient() {
+        return client;
+    }
+
+    public void setClient(String client) {
+        this.client = client;
+    }
+
+    public Evenement getEvenement() {
+        return evenement;
+    }
+
+    public void setEvenement(Evenement evenement) {
+        this.evenement = evenement;
+    }
+
+    public TypeBillet getTypeBillet() {
+        return type;
+    }
+
+    public void setTypeBillet(TypeBillet type) {
+        this.type = type;
+    }
+}
