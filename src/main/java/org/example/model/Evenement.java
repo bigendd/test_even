@@ -1,5 +1,7 @@
-package org.example.classes;
+package org.example.model;
 
+
+import org.example.exeption.BilletIndisponibleException;
 
 import java.util.ArrayList;
 import java.util.List;

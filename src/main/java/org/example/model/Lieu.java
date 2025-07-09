@@ -1,4 +1,4 @@
-package org.example.classes;
+package org.example.model;
 
 public class Lieu extends Adresse{
     private final String capacite;

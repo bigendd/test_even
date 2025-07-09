@@ -1,8 +1,8 @@
 package org.example.ihm;
 
-import org.example.classes.Billet;
-import org.example.classes.Evenement;
-import org.example.classes.BilletIndisponibleException;
+import org.example.model.Billet;
+import org.example.model.Evenement;
+import org.example.exeption.BilletIndisponibleException;
 
 import java.util.ArrayList;
 import java.util.List;
