@@ -10,4 +10,10 @@ public class Lieu extends Adresse{
     public String getCapacite() {
         return capacite;
     }
+    public String setRue(){
+        return super.getRue();
+    }
+    public String setVille(){
+        return super.getVille();
+    }
 }

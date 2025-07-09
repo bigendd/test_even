@@ -4,7 +4,7 @@ public class Billet {
     private String numero;
     private String client;
     private Evenement evenement;
-    private TypeBillet type; // champ manquant ajouté ici
+    private TypeBillet type;
 
     public enum TypeBillet {
         STANDARD,
@@ -12,13 +12,15 @@ public class Billet {
         VIP
     }
 
-    public Billet(String numero, String client, Evenement evenement, TypeBillet type) {
-        this.numero = numero;
+    public Billet( String client, Evenement evenement, TypeBillet type) {
+        this.numero = genererNumeroAuto();
         this.client = client;
         this.evenement = evenement;
-        this.type = type; // correction ici
+        this.type = type;
     }
-
+    private String genererNumeroAuto(){
+        return "BILLET-" + System.currentTimeMillis();
+    }
     public String getNumero() {
         return numero;
     }

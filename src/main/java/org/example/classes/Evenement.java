@@ -1,6 +1,7 @@
 package org.example.classes;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Evenement {
@@ -9,15 +10,14 @@ public class Evenement {
     private String date;
     private String heure;
     private int nombrePlace;
-    private List<Billet> listeBillet;
+    private List<Billet> listeBillet = new ArrayList<>();
 
-    public Evenement(String nom, String lieu, String date, String heure, int nombrePlace, List<Billet> listeBillet) {
+    public Evenement(String nom, String lieu, String date, String heure, int nombrePlace) {
         this.nom = nom;
         this.lieu = lieu;
         this.date = date;
         this.heure = heure;
         this.nombrePlace = nombrePlace;
-        this.listeBillet = listeBillet;
     }
 
     public String getNom() {
